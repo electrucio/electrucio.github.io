@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ElectroSmash Analyses — Complete Index</title>
+<style>
+  :root {
+    --bg:#17181a; --panel:#1f2124; --panel2:#262a2e; --line:#33383d;
+    --ink:#e6e8ea; --dim:#9aa1a8; --accent:#ff7a18; --accent2:#ffa347;
+    --ok:#4ec98a; --warn:#d8a13a;
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  a { color:var(--accent2); text-decoration:none }
+  a:hover { text-decoration:underline }
+  header { border-bottom:3px solid var(--accent); background:linear-gradient(180deg,#1c1e21,#17181a); }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 20px }
+  .brand { padding:34px 0 26px }
+  .brand h1 { margin:0; font-size:34px; letter-spacing:-.5px; font-weight:800 }
+  .brand h1 span { color:var(--accent) }
+  .brand .tag { color:var(--dim); margin:8px 0 0; font-size:14px }
+  nav { display:flex; flex-wrap:wrap; gap:4px; padding-bottom:18px }
+  nav a { padding:7px 13px; border:1px solid var(--line); border-radius:999px;
+    color:var(--ink); font-size:13px; background:var(--panel) }
+  nav a:hover { border-color:var(--accent); color:var(--accent2); text-decoration:none }
+  .notice { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:6px; padding:16px 18px; margin:26px 0; font-size:14px; color:var(--dim) }
+  .notice strong { color:var(--ink) }
+  .notice ul { margin:10px 0 0; padding-left:20px }
+  .notice li { margin:4px 0 }
+  .searchbar { margin:22px 0 6px }
+  .searchbar input { width:100%; padding:13px 16px; border-radius:8px; border:1px solid var(--line);
+    background:var(--panel); color:var(--ink); font-size:15px }
+  .searchbar input:focus { outline:none; border-color:var(--accent) }
+  .hint { color:var(--dim); font-size:12.5px; margin:8px 0 0 }
+  section { margin:44px 0 }
+  .sec-head { display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--line); padding-bottom:8px }
+  .sec-head h2 { margin:0; font-size:21px; letter-spacing:.3px; text-transform:uppercase; color:var(--accent2) }
+  .count { font-size:12px; color:var(--dim); border:1px solid var(--line); border-radius:999px; padding:2px 9px }
+  .sec-desc { color:var(--dim); font-size:13.5px; margin:10px 0 18px }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:14px }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:15px 16px;
+    display:flex; flex-direction:column; transition:border-color .15s,transform .15s }
+  .card:hover { border-color:var(--accent); transform:translateY(-2px) }
+  .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:10px }
+  .card h3 { margin:0 0 6px; font-size:15.5px; line-height:1.35 }
+  .card p { margin:0 0 13px; color:var(--dim); font-size:13.5px; flex:1 }
+  .pill { font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; padding:3px 8px;
+    border-radius:999px; white-space:nowrap; flex:none }
+  .pill-ok { color:var(--ok); border:1px solid rgba(78,201,138,.4); background:rgba(78,201,138,.08) }
+  .pill-warn { color:var(--warn); border:1px solid rgba(216,161,58,.4); background:rgba(216,161,58,.08) }
+  .links { display:flex; flex-wrap:wrap; gap:7px }
+  .btn { font-size:12.5px; padding:6px 11px; border-radius:5px; border:1px solid var(--line);
+    background:var(--panel2); color:var(--ink) }
+  .btn:hover { text-decoration:none; border-color:var(--accent); color:var(--accent2) }
+  .btn-live { background:var(--accent); border-color:var(--accent); color:#17181a; font-weight:700 }
+  .btn-live:hover { color:#17181a; background:var(--accent2); border-color:var(--accent2) }
+  .btn-dead { opacity:.5; text-decoration:line-through }
+  .empty { color:var(--dim); padding:20px 0 }
+  footer { border-top:1px solid var(--line); margin-top:60px; padding:26px 0 50px;
+    color:var(--dim); font-size:13px }
+  footer p { margin:6px 0 }
+  @media (max-width:600px) { .brand h1 { font-size:26px } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <h1>Electro<span>Smash</span> — Analyses Index</h1>
+      <p class="tag">Every circuit analysis, chip teardown and open-hardware project ElectroSmash.com published — 41 entries, with a working link for each.</p>
+    </div>
+    <nav><a href="#pedals">Pedals</a><a href="#chips">Chips</a><a href="#amps">Amps</a><a href="#projects">Projects &amp; Open Hardware</a><a href="#extras">Other Pages</a></nav>
+  </div>
+</header>
+<div class="wrap">
+
+  <div class="notice">
+    <strong>What this is.</strong> electrosmash.com is offline — its DNS A record was removed around 8 June 2026, leaving the domain registered (paid to 2031) but pointing nowhere. This is a complete catalogue of what the site published, so nothing gets lost track of.
+    <ul>
+      <li><strong>29 of 41</strong> articles are readable right now on the <a href="https://electrosmash.mas-effects.com" target="_blank" rel="noopener">MAS Effects mirror</a> (also as <a href="https://electrosmash.mas-effects.com/pdf/" target="_blank" rel="noopener">PDF exports</a>) — marked <span class="pill pill-ok">live mirror</span>.</li>
+      <li>The rest — the project pages and site extras — survive only in the Internet Archive, marked <span class="pill pill-warn">archive only</span>.</li>
+      <li>The second mirror, rarebuzzer.com/electrosmash, is gone; that domain is now a GoDaddy parking page.</li>
+      <li>Article text and images remain the property of ElectroSmash's author, so this index links to them rather than re-hosting them.</li>
+    </ul>
+  </div>
+
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Filter — try &ldquo;LM386&rdquo;, &ldquo;fuzz&rdquo;, &ldquo;delay&rdquo;, &ldquo;MXR&rdquo;&hellip;" autocomplete="off">
+    <p class="hint" id="hint">41 entries</p>
+  </div>
+
+    <section id="pedals">
+      <div class="sec-head"><h2>Pedals</h2><span class="count">19</span></div>
+      <p class="sec-desc">Guitar effects teardowns and circuit analyses.</p>
+      <div class="grid">
+      <article class="card" data-t="back talk reverse delay analysis danelectro reverse delay built around the pt2399 delay ic.">
+        <div class="card-top"><h3>Back Talk Reverse Delay Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Danelectro reverse delay built around the PT2399 delay IC.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/back-talk-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/back-talk-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/back-talk-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="big muff pi analysis electro-harmonix fuzz/sustainer: four cascaded transistor stages and the scooped tone stack.">
+        <div class="card-top"><h3>Big Muff Pi Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Electro-Harmonix fuzz/sustainer: four cascaded transistor stages and the scooped tone stack.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/big-muff-pi-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/big-muff-pi-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/big-muff-pi-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="boss ce-2 analysis analog chorus using an mn3007 bucket-brigade delay line with an mn3101 clock driver.">
+        <div class="card-top"><h3>Boss CE-2 Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Analog chorus using an MN3007 bucket-brigade delay line with an MN3101 clock driver.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/boss-ce-2-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/boss-ce-2-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/boss-ce-2-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="boss ds-1 distortion analysis transistor input booster feeding an op-amp gain stage with diode clipping.">
+        <div class="card-top"><h3>Boss DS-1 Distortion Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Transistor input booster feeding an op-amp gain stage with diode clipping.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/boss-ds1-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/boss-ds1-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/boss-ds1-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="dallas rangemaster treble booster analysis single germanium pnp treble booster — the classic 60s british lead tone.">
+        <div class="card-top"><h3>Dallas Rangemaster Treble Booster Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Single germanium PNP treble booster — the classic 60s British lead tone.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/dallas-rangemaster" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/dallas-rangemaster" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/dallas-rangemaster" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="dunlop cry baby gcb-95 circuit analysis inductor-based wah: the sweep network, buffer and pot taper.">
+        <div class="card-top"><h3>Dunlop Cry Baby GCB-95 Circuit Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Inductor-based wah: the sweep network, buffer and pot taper.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/crybaby-gcb-95" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/crybaby-gcb-95" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/crybaby-gcb-95" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="emg81 pickup analysis active humbucker with its onboard low-noise preamp reverse-engineered.">
+        <div class="card-top"><h3>EMG81 Pickup Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Active humbucker with its onboard low-noise preamp reverse-engineered.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/emg81" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/emg81" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/emg81" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="fuzz face analysis two-transistor feedback fuzz, germanium and silicon variants compared.">
+        <div class="card-top"><h3>Fuzz Face Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Two-transistor feedback fuzz, germanium and silicon variants compared.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/fuzz-face" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/fuzz-face" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/fuzz-face" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="klon centaur analysis dual op-amp overdrive with a charge-pump bipolar supply and the famous buffer.">
+        <div class="card-top"><h3>Klon Centaur Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Dual op-amp overdrive with a charge-pump bipolar supply and the famous buffer.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/klon-centaur-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/klon-centaur-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/klon-centaur-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="marshall the guvnor analysis op-amp distortion wrapped in a marshall-style three-band tone stack.">
+        <div class="card-top"><h3>Marshall The Guvnor Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Op-amp distortion wrapped in a Marshall-style three-band tone stack.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/marshall-guvnor-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/marshall-guvnor-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/marshall-guvnor-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="mxr distortion + analysis op-amp gain stage with germanium diodes to ground for asymmetric clipping.">
+        <div class="card-top"><h3>MXR Distortion + Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Op-amp gain stage with germanium diodes to ground for asymmetric clipping.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/mxr-distortion-plus-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/mxr-distortion-plus-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/mxr-distortion-plus-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="mxr dyna comp analysis ca3080 ota compressor — sidechain, attack and release behaviour.">
+        <div class="card-top"><h3>MXR Dyna Comp Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>CA3080 OTA compressor — sidechain, attack and release behaviour.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/mxr-dyna-comp-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/mxr-dyna-comp-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/mxr-dyna-comp-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="mxr microamp analysis minimal single op-amp clean boost, gain and bandwidth measured.">
+        <div class="card-top"><h3>MXR MicroAmp Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Minimal single op-amp clean boost, gain and bandwidth measured.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/mxr-microamp" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/mxr-microamp" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/mxr-microamp" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="mxr phase 90 analysis four-stage jfet phase shifter driven by a low-frequency oscillator.">
+        <div class="card-top"><h3>MXR Phase 90 Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Four-stage JFET phase shifter driven by a low-frequency oscillator.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/mxr-phase90" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/mxr-phase90" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/mxr-phase90" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pro co rat analysis lm308 high-gain distortion and the low-pass filter control.">
+        <div class="card-top"><h3>Pro Co RAT Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>LM308 high-gain distortion and the low-pass Filter control.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/proco-rat" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/proco-rat" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/proco-rat" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="sitar swami analysis buzz/drone effect that emulates a sitar&#x27;s sympathetic strings.">
+        <div class="card-top"><h3>Sitar Swami Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Buzz/drone effect that emulates a sitar&#x27;s sympathetic strings.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/sitar-swami-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/sitar-swami-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/sitar-swami-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="tube screamer circuit analysis jrc4558 symmetric soft-clipping overdrive — ts808 vs ts9 differences.">
+        <div class="card-top"><h3>Tube Screamer Circuit Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>JRC4558 symmetric soft-clipping overdrive — TS808 vs TS9 differences.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/tube-screamer-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/tube-screamer-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/tube-screamer-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="vox v847 wah-wah analysis inductor wah in the clyde mccoy lineage, sweep and loading examined.">
+        <div class="card-top"><h3>Vox V847 Wah-Wah Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Inductor wah in the Clyde McCoy lineage, sweep and loading examined.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/vox-v847-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/vox-v847-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/vox-v847-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="you can build the perfect germanium fuzz transistor selection, leakage and biasing — plus electrosmash&#x27;s own build.">
+        <div class="card-top"><h3>You Can Build the Perfect Germanium Fuzz</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Transistor selection, leakage and biasing — plus ElectroSmash&#x27;s own build.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/germanium-fuzz" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/germanium-fuzz" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/germanium-fuzz" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      </div>
+    </section>
+    <section id="chips">
+      <div class="sec-head"><h2>Chips</h2><span class="count">4</span></div>
+      <p class="sec-desc">The op-amps, delay chips and ICs found inside the pedals above.</p>
+      <div class="grid">
+      <article class="card" data-t="bucket brigade devices: mn3007 how bbd analog delay lines work: charge transfer, clocking and companding.">
+        <div class="card-top"><h3>Bucket Brigade Devices: MN3007</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>How BBD analog delay lines work: charge transfer, clocking and companding.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/mn3007-bucket-brigade-devices" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/mn3007-bucket-brigade-devices" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/mn3007-bucket-brigade-devices" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="jrc4558 analysis internal schematic of the dual op-amp that made the tube screamer famous.">
+        <div class="card-top"><h3>JRC4558 Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Internal schematic of the dual op-amp that made the Tube Screamer famous.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/jrc4558-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/jrc4558-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/jrc4558-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="lm386 audio amplifier analysis internal schematic, gain configurations and how it distorts.">
+        <div class="card-top"><h3>LM386 Audio Amplifier Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Internal schematic, gain configurations and how it distorts.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/lm386-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/lm386-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/lm386-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pt2399 analysis digital delay ic internals: delay time, clock, filtering and noise.">
+        <div class="card-top"><h3>PT2399 Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Digital delay IC internals: delay time, clock, filtering and noise.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/pt2399-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pt2399-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pt2399-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      </div>
+    </section>
+    <section id="amps">
+      <div class="sec-head"><h2>Amps</h2><span class="count">6</span></div>
+      <p class="sec-desc">Small guitar amplifier analyses and open-hardware amp projects.</p>
+      <div class="grid">
+      <article class="card" data-t="1wamp electric guitar amplifier — open hardware electrosmash&#x27;s own open-hardware 1-watt guitar amp: schematic, pcb and analysis.">
+        <div class="card-top"><h3>1Wamp Electric Guitar Amplifier — Open Hardware</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>ElectroSmash&#x27;s own open-hardware 1-watt guitar amp: schematic, PCB and analysis.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/1wamp" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/1wamp" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/1wamp" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="little gem analysis lm386-based mini amp (runoffgroove design) taken apart stage by stage.">
+        <div class="card-top"><h3>Little Gem Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>LM386-based mini amp (runoffgroove design) taken apart stage by stage.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/little-gem-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/little-gem-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/little-gem-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="marshall mg10 amplifier analysis solid-state practice amp: preamp, tone stack and power stage.">
+        <div class="card-top"><h3>Marshall MG10 Amplifier Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Solid-state practice amp: preamp, tone stack and power stage.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/marshall-mg10" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/marshall-mg10" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/marshall-mg10" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="noisy cricket analysis beavis audio&#x27;s lm386 amp with its jfet front end.">
+        <div class="card-top"><h3>Noisy Cricket Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>Beavis Audio&#x27;s LM386 amp with its JFET front end.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/noisy-cricket-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/noisy-cricket-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/noisy-cricket-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="ruby amp analysis lm386 power amp fed by a jfet input stage.">
+        <div class="card-top"><h3>Ruby Amp Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>LM386 power amp fed by a JFET input stage.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/ruby-amp-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/ruby-amp-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/ruby-amp-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="smokey amp analysis the cigarette-box lm386 amp and why it sounds the way it does.">
+        <div class="card-top"><h3>Smokey Amp Analysis</h3><span class="pill pill-ok">live mirror</span></div>
+        <p>The cigarette-box LM386 amp and why it sounds the way it does.</p>
+        <div class="links"><a class="btn btn-live" href="https://electrosmash.mas-effects.com/smokey-amp-analysis" target="_blank" rel="noopener">Read on mirror</a><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/smokey-amp-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/smokey-amp-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="sec-head"><h2>Projects &amp; Open Hardware</h2><span class="count">7</span></div>
+      <p class="sec-desc">ElectroSmash&#x27;s own designs. Not on the live mirror — Wayback only.</p>
+      <div class="grid">
+      <article class="card" data-t="pedalshield — arduino guitar pedal overview of the open-hardware arduino pedal platform.">
+        <div class="card-top"><h3>pedalSHIELD — Arduino Guitar Pedal</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Overview of the open-hardware Arduino pedal platform.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pedalshield" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pedalshield" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pedalshield uno arduino uno version: hardware, effect codes and documentation.">
+        <div class="card-top"><h3>pedalSHIELD UNO</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Arduino UNO version: hardware, effect codes and documentation.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pedalshield-uno" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pedalshield-uno" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pedalshield due arduino due version — 32-bit dsp effects platform.">
+        <div class="card-top"><h3>pedalSHIELD DUE</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Arduino DUE version — 32-bit DSP effects platform.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pedalshield-due-start" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pedalshield-due-start" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pedalshield mega arduino mega version of the programmable pedal.">
+        <div class="card-top"><h3>pedalSHIELD MEGA</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Arduino MEGA version of the programmable pedal.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pedalshield-mega" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pedalshield-mega" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pedal-pi — raspberry pi zero guitar pedal lo-fi programmable pedal built on the pi zero.">
+        <div class="card-top"><h3>Pedal-Pi — Raspberry Pi ZERO Guitar Pedal</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Lo-fi programmable pedal built on the Pi Zero.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/pedal-pi" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/pedal-pi" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="time manipulator — arduino delay/echo/reverb electrosmash&#x27;s arduino-based time-effects pedal.">
+        <div class="card-top"><h3>Time Manipulator — Arduino Delay/Echo/Reverb</h3><span class="pill pill-warn">archive only</span></div>
+        <p>ElectroSmash&#x27;s Arduino-based time-effects pedal.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/time-manipulator" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/time-manipulator" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="germanium fuzz — diy start page build guide and assembly notes for the germanium fuzz kit.">
+        <div class="card-top"><h3>Germanium Fuzz — DIY Start Page</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Build guide and assembly notes for the Germanium Fuzz kit.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/germanium-fuzz-start" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/germanium-fuzz-start" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      </div>
+    </section>
+    <section id="extras">
+      <div class="sec-head"><h2>Other Pages</h2><span class="count">5</span></div>
+      <p class="sec-desc">Schematic collections, forum circuit analyses and site pages.</p>
+      <div class="grid">
+      <article class="card" data-t="selected schematics electrosmash&#x27;s curated collection of pedal and amp schematics.">
+        <div class="card-top"><h3>Selected Schematics</h3><span class="pill pill-warn">archive only</span></div>
+        <p>ElectroSmash&#x27;s curated collection of pedal and amp schematics.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/schematics" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/schematics" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="start the site&#x27;s getting-started / index page.">
+        <div class="card-top"><h3>Start</h3><span class="pill pill-warn">archive only</span></div>
+        <p>The site&#x27;s getting-started / index page.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/start" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/start" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="pedal pi circuit analysis circuit walk-through of the pedal-pi, published on the forum.">
+        <div class="card-top"><h3>Pedal Pi Circuit Analysis</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Circuit walk-through of the Pedal-Pi, published on the forum.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/forum/pedal-pi/206-pedal-pi-circuit-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/forum/pedal-pi/206-pedal-pi-circuit-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="time manipulator circuit analysis circuit walk-through of the time manipulator, published on the forum.">
+        <div class="card-top"><h3>Time Manipulator Circuit Analysis</h3><span class="pill pill-warn">archive only</span></div>
+        <p>Circuit walk-through of the Time Manipulator, published on the forum.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/forum/time-manipulator/400-time-manipulator-circuit-analysis" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/forum/time-manipulator/400-time-manipulator-circuit-analysis" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      <article class="card" data-t="rights the site&#x27;s own copyright / reuse terms page.">
+        <div class="card-top"><h3>Rights</h3><span class="pill pill-warn">archive only</span></div>
+        <p>The site&#x27;s own copyright / reuse terms page.</p>
+        <div class="links"><a class="btn" href="https://web.archive.org/web/2022/https://www.electrosmash.com/rights" target="_blank" rel="noopener">Wayback</a><a class="btn btn-dead" href="https://www.electrosmash.com/rights" target="_blank" rel="noopener" title="Original URL — currently offline">Original</a></div>
+      </article>
+      </div>
+    </section>
+
+</div>
+<footer>
+  <div class="wrap">
+    <p><strong>Provenance.</strong> Article list compiled from the MAS Effects mirror index, the mirror's PDF folder, and search-engine records of electrosmash.com URLs. Slugs match the original site exactly, so <code>https://www.electrosmash.com/&lt;slug&gt;</code> and <code>https://electrosmash.mas-effects.com/&lt;slug&gt;</code> address the same article.</p>
+    <p>All articles, schematics and images &copy; their original author at ElectroSmash.com. This page is an unofficial index of links, not a republication.</p>
+  </div>
+</footer>
+<script>
+  var q = document.getElementById('q'), hint = document.getElementById('hint');
+  var cards = [].slice.call(document.querySelectorAll('.card'));
+  var secs = [].slice.call(document.querySelectorAll('section'));
+  q.addEventListener('input', function () {
+    var v = q.value.trim().toLowerCase(), n = 0;
+    cards.forEach(function (c) {
+      var hit = !v || c.dataset.t.indexOf(v) !== -1;
+      c.hidden = !hit; if (hit) n++;
+    });
+    secs.forEach(function (s) {
+      s.hidden = s.querySelectorAll('.card:not([hidden])').length === 0;
+    });
+    hint.textContent = v ? n + ' of 41 match "' + q.value.trim() + '"' : '41 entries';
+  });
+</script>
+</body>
+</html>
